@@ -66,7 +66,7 @@ function move(direction) {
         if (checkGameOver()) {
             board.classList.add('game-over');
             const newBoard = document.createElement('p');
-            newBoard.textContent = "Game Over! Press Reset to start a new game.";
+            newBoard.textContent = "Game Over! Press Start to start a new game.";
             newBoard.style.backgroundColor = 'red';
             newBoard.style.color = 'white';
             const game = document.getElementById("game");

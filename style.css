@@ -12,7 +12,10 @@ body {
   /* Allow scrolling if content overflows */
   margin-top: 20%;
 }
-
+h3{
+  padding-left: 32%;
+  color: rgb(246, 67, 27);
+}
 #game-board {
   height: 250px;
   width: 250px;
