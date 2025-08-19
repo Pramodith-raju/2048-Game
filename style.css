@@ -4,12 +4,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
-  /* 80% of the viewport width */
   height: 90%;
-  /* 90% of the viewport height */
   margin: 0 auto;
   overflow: auto;
-  /* Allow scrolling if content overflows */
   margin-top: 20%;
 }
 h3{
@@ -43,8 +40,7 @@ h3{
   justify-content: center;
 }
 
-#score-card,
-#res {
+#score-card, #res {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,4 +76,9 @@ h3{
 
 #game-over #game-board {
   display: none;
+}
+
+#reset{
+  background-color: #4CAF50;
+  color: white;
 }

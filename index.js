@@ -3,10 +3,13 @@ const scoreDisplay = document.getElementById("score");
 const resetBtn = document.getElementById("reset");
 let score = 0;
 const Tile = document.querySelectorAll('.tile');
-resetBtn.addEventListener("click", start);
+resetBtn.addEventListener("click", ()=>{
+    resetBtn.style.display="none";
+    start();});
 let tiles = [];
 function start() {
     score=0;
+    resetBtn
     tiles = [];
     Tile.forEach(til => {
         til.dataset.value = "0";
@@ -64,6 +67,7 @@ function move(direction) {
         addTile();
         updateBoard();
         if (checkGameOver()) {
+            resetBtn.style.display="block";
             board.classList.add('game-over');
             const newBoard = document.createElement('p');
             newBoard.textContent = "Game Over! Press Start to start a new game.";

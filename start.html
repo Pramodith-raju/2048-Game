@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        #startButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #startButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to 2048!</h1>
+        <p>
+            Before you Start the game, learn how to play the game
+        </p>
+        <h2>How to Play:</h2>
+        <ul>
+            <li>Use the **arrow keys** on your keyboard to move the tiles.</li>
+            <li>When two tiles with the same number touch, they **merge into one**.</li>
+            <li>Every turn, a new tile with a value of **2 or 4** will appear.</li>
+            <li>The game will end when all the tiles are filled and no moves can be made.</li>
+        </ul>
+        <button id="startButton">Start Game</button>
+    </div>
+    <script>
+        const startBtn = document.getElementById("startButton");
+        startBtn.addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>
